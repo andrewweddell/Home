@@ -14,9 +14,21 @@ const Image = styled.img`
 `;
 
 const Title = styled.h2`
-  font-size: 16px;
-  font-weight: normal;
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 22px; // Adjusted size for Archivo Black
   margin: 0;
+  flex: 1;
+`;
+
+const ViewButton = styled.button`
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  padding: 8px 16px;
+  border: 1px solid black;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  font-size: 14px;
 `;
 
 const ProjectCard = ({ title, image }) => (

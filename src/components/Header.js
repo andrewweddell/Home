@@ -3,7 +3,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { Container } from './Layout';
-
+ 
 const HeaderWrapper = styled.header`
   background-color: white;
   padding: 20px 0;
@@ -21,8 +21,8 @@ const HeaderContainer = styled(Container)`
 `;
 
 const Logo = styled(Link)`
-  font-size: 28px;
-  font-weight: bold;
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 24px;
   text-decoration: none;
   color: black;
 `;
@@ -34,9 +34,10 @@ const Nav = styled.nav`
 `;
 
 const NavLink = styled(Link)`
+  font-family: 'Open Sans', sans-serif;
   text-decoration: none;
   color: ${props => props.active ? 'black' : 'gray'};
-  font-weight: ${props => props.active ? 'bold' : 'normal'};
+  font-weight: ${props => props.active ? '600' : '400'};
 `;
 
 const Header = () => {

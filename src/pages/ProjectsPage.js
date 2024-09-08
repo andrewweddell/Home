@@ -2,17 +2,18 @@
 import React from 'react';
 import styled from 'styled-components';
 import ProjectCard from '../components/ProjectCard';
+import { Container } from '../components/Layout';
 
 const ProjectsWrapper = styled.div`
-  padding: 80px 40px 40px;
+  padding: 120px 0 40px;
   background-color: white;
 `;
 
 const Title = styled.h1`
-  font-size: 90px;
-  font-weight: bold;
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 100px; // Adjusted size for Archivo Black
   margin-bottom: 40px;
-  line-height: 1.0;
+  line-height: 1.1; // Adjusted for Archivo Black
 `;
 
 const FilterBar = styled.div`
@@ -23,6 +24,8 @@ const FilterBar = styled.div`
 `;
 
 const FilterButton = styled.button`
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
   padding: 5px 15px;
   border: 1px solid black;
   border-radius: 20px;

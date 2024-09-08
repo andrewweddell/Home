@@ -10,16 +10,16 @@ const GalleryWrapper = styled.div`
 `;
 
 const Title = styled.h1`
-  font-size: 72px;
-  font-weight: bold;
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 64px; // Adjusted size for Archivo Black
   margin-bottom: 40px;
-  line-height: 1.1;
+  line-height: 1.1; // Adjusted for Archivo Black
 `;
 
 const GalleryGrid = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 5px;
 `;
 
 const GalleryImageWrapper = styled.div`
@@ -53,13 +53,11 @@ const CarouselWrapper = styled.div`
 `;
 
 const CloseButton = styled.button`
-  position: absolute;
-  top: 40px;
-  right: 40px;
+  font-family: 'Open Sans', sans-serif;
   background: none;
   border: none;
   color: white;
-  font-size: 65px;
+  font-size: 36px;
   cursor: pointer;
   z-index: 1001;
 `;
